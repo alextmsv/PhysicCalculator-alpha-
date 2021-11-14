@@ -1,0 +1,13 @@
+D:\Exchange Folder\Projects\GraphicalPhysicCalculator\GraphicalPhysicCalculator\bin\Debug\GraphicalPhysicCalculator.exe.config
+D:\Exchange Folder\Projects\GraphicalPhysicCalculator\GraphicalPhysicCalculator\bin\Debug\GraphicalPhysicCalculator.exe
+D:\Exchange Folder\Projects\GraphicalPhysicCalculator\GraphicalPhysicCalculator\bin\Debug\GraphicalPhysicCalculator.pdb
+D:\Exchange Folder\Projects\GraphicalPhysicCalculator\GraphicalPhysicCalculator\obj\Debug\GraphicalPhysicCalculator.csproj.AssemblyReference.cache
+D:\Exchange Folder\Projects\GraphicalPhysicCalculator\GraphicalPhysicCalculator\obj\Debug\GraphicalPhysicCalculator.Form1.resources
+D:\Exchange Folder\Projects\GraphicalPhysicCalculator\GraphicalPhysicCalculator\obj\Debug\GraphicalPhysicCalculator.Properties.Resources.resources
+D:\Exchange Folder\Projects\GraphicalPhysicCalculator\GraphicalPhysicCalculator\obj\Debug\GraphicalPhysicCalculator.csproj.GenerateResource.cache
+D:\Exchange Folder\Projects\GraphicalPhysicCalculator\GraphicalPhysicCalculator\obj\Debug\GraphicalPhysicCalculator.csproj.CoreCompileInputs.cache
+D:\Exchange Folder\Projects\GraphicalPhysicCalculator\GraphicalPhysicCalculator\obj\Debug\GraphicalPhysicCalculator.exe
+D:\Exchange Folder\Projects\GraphicalPhysicCalculator\GraphicalPhysicCalculator\obj\Debug\GraphicalPhysicCalculator.pdb
+D:\Exchange Folder\Projects\GraphicalPhysicCalculator\GraphicalPhysicCalculator\obj\Debug\GraphicalPhysicCalculator.Menu.resources
+D:\Exchange Folder\Projects\GraphicalPhysicCalculator\GraphicalPhysicCalculator\obj\Debug\GraphicalPhysicCalculator.distanceForm.resources
+D:\Exchange Folder\Projects\GraphicalPhysicCalculator\GraphicalPhysicCalculator\obj\Debug\GraphicalPhysicCalculator.SpeedForm.resources
