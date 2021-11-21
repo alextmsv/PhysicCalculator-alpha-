@@ -63,33 +63,36 @@ namespace GraphicalPhysicCalculator
         private void tmr_emulation_Tick(object sender, EventArgs e)
         {
             verticalProgressBar1.Maximum = (int)height.Value;
+            
             int g = 10; //ускорение свободного падения (округленное)
-            double H = (double)mass.Value * 9.80; //кг в ньютон   
+            double H = (double)mass.Value * 9.80; //масса в ньютон
+            double time = Math.Sqrt(2*(double)height.Value/g);
             double speed = Math.Sqrt(2*g*(double)height.Value);
-            int magic = (int)speed; // убирает остаток
-            int strength = (int)((double)mass.Value*g*H/(double)height.Value);
-            if (verticalProgressBar1.Maximum < magic)
+            double a = speed / time; // вектор ускорения a=v(скорость)/t(время) 
+            int strength = (int)mass.Value * (int)a; // второй закон ньютона F(strength) = ma
+            if (verticalProgressBar1.Maximum < (int)speed)
             {
                 tmr_emulation.Enabled = false;
-                speedText.Text = magic.ToString() + " м/с";
+                speedText.Text = ((int)speed).ToString() + " м/с";
                 strengthText.Text = (strength + " кг").ToString();
+                timeText.Text = ((int)time).ToString() + " сек";
                 MessageBox.Show("Ваш объект упал за мгновенье!", "Симуляция завершена", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 verticalProgressBar1.Value = 0;
                 return;
             }
             
-            verticalProgressBar1.Value += magic;
-            if (verticalProgressBar1.Value + magic >= verticalProgressBar1.Maximum)
+            verticalProgressBar1.Value += (int)speed;
+            if (verticalProgressBar1.Value + ((int)speed) >= verticalProgressBar1.Maximum)
             {
                 tmr_emulation.Enabled = false;
                 MessageBox.Show("Упал", "Симуляция завершена", MessageBoxButtons.OK);
                 verticalProgressBar1.Value = 0;
                 return;
             } 
-            speedText.Text = magic.ToString() + " м/с";
+            speedText.Text = ((int)speed).ToString() + " м/с";
             strengthText.Text = (strength + " кг").ToString();
 
-            timeText.Text = ((int)height.Value / magic).ToString() + " сек";
+            timeText.Text = ((int)time).ToString() + " сек";
         }
 
         private void label3_Click(object sender, EventArgs e)
