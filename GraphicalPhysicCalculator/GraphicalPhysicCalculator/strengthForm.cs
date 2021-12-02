@@ -62,15 +62,16 @@ namespace GraphicalPhysicCalculator
         }
         private void tmr_emulation_Tick(object sender, EventArgs e)
         {
-            verticalProgressBar1.Maximum = (int)height.Value;
+            
             
             int g = 10; //ускорение свободного падения (округленное)
-            double H = (double)mass.Value * 9.80; //масса в ньютон
+            double HtoKG = 0.101; //ньютон в массу (веденную массу умножаем на это число и получится сила удара в кг; округленное)
             double time = Math.Sqrt(2*(double)height.Value/g);
             double speed = Math.Sqrt(2*g*(double)height.Value);
             double a = speed / time; // вектор ускорения a=v(скорость)/t(время) 
-            int strength = (int)mass.Value * (int)a; // второй закон ньютона F(strength) = ma
-            if (verticalProgressBar1.Maximum < (int)speed)
+            double strength = (double)mass.Value * a * HtoKG; // F = ma (mv/t) * HtoKG (переводим в "кг")
+            verticalProgressBar1.Maximum = (int)(speed*time);
+            if (verticalProgressBar1.Maximum < (int)speed) // альтернативы пока не нашел
             {
                 tmr_emulation.Enabled = false;
                 speedText.Text = ((int)speed).ToString() + " м/с";
@@ -80,9 +81,8 @@ namespace GraphicalPhysicCalculator
                 verticalProgressBar1.Value = 0;
                 return;
             }
-            
             verticalProgressBar1.Value += (int)speed;
-            if (verticalProgressBar1.Value + ((int)speed) >= verticalProgressBar1.Maximum)
+            if (verticalProgressBar1.Value + (int)speed >= verticalProgressBar1.Maximum)
             {
                 tmr_emulation.Enabled = false;
                 MessageBox.Show("Упал", "Симуляция завершена", MessageBoxButtons.OK);
@@ -113,6 +113,11 @@ namespace GraphicalPhysicCalculator
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+        
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

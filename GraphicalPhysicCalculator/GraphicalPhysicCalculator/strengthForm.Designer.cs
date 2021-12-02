@@ -36,11 +36,11 @@ namespace GraphicalPhysicCalculator
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.speedText = new System.Windows.Forms.Label();
-            this.verticalProgressBar1 = new verticalProgress.verticalProgressBar();
             this.label2 = new System.Windows.Forms.Label();
             this.strengthText = new System.Windows.Forms.Label();
             this.timeText = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.verticalProgressBar1 = new verticalProgress.verticalProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.mass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.height)).BeginInit();
             this.SuspendLayout();
@@ -104,16 +104,6 @@ namespace GraphicalPhysicCalculator
             this.speedText.TabIndex = 8;
             this.speedText.Text = "...";
             // 
-            // verticalProgressBar1
-            // 
-            this.verticalProgressBar1.Location = new System.Drawing.Point(186, 12);
-            this.verticalProgressBar1.Name = "verticalProgressBar1";
-            this.verticalProgressBar1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.verticalProgressBar1.RightToLeftLayout = true;
-            this.verticalProgressBar1.Size = new System.Drawing.Size(97, 332);
-            this.verticalProgressBar1.TabIndex = 5;
-            this.verticalProgressBar1.Click += new System.EventHandler(this.verticalProgressBar1_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -153,6 +143,16 @@ namespace GraphicalPhysicCalculator
             this.label4.TabIndex = 12;
             this.label4.Text = "Время падения:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // verticalProgressBar1
+            // 
+            this.verticalProgressBar1.Location = new System.Drawing.Point(186, 12);
+            this.verticalProgressBar1.Name = "verticalProgressBar1";
+            this.verticalProgressBar1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.verticalProgressBar1.RightToLeftLayout = true;
+            this.verticalProgressBar1.Size = new System.Drawing.Size(97, 332);
+            this.verticalProgressBar1.TabIndex = 5;
+            this.verticalProgressBar1.Click += new System.EventHandler(this.verticalProgressBar1_Click);
             // 
             // strengthForm
             // 
