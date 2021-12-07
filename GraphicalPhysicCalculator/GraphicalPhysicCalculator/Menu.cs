@@ -55,5 +55,10 @@ namespace GraphicalPhysicCalculator
             this.Hide();
             strengthForm.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

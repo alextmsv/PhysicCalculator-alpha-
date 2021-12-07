@@ -68,7 +68,7 @@ namespace GraphicalPhysicCalculator
             double HtoKG = 0.101; //ньютон в массу (веденную массу умножаем на это число и получится сила удара в кг; округленное)
             double time = Math.Sqrt(2*(double)height.Value/g);
             double speed = Math.Sqrt(2*g*(double)height.Value);
-            double a = speed / time; // вектор ускорения a=v(скорость)/t(время) 
+            int a = 10; //speed / time; вектор ускорения a=v(скорость)/t(время) 
             double strength = (double)mass.Value * a * HtoKG; // F = ma (mv/t) * HtoKG (переводим в "кг")
             verticalProgressBar1.Maximum = (int)(speed*time);
             if (verticalProgressBar1.Maximum < (int)speed) // альтернативы пока не нашел
