@@ -95,6 +95,7 @@ namespace GraphicalPhysicCalculator
             this.label4.Size = new System.Drawing.Size(133, 17);
             this.label4.TabIndex = 10;
             this.label4.Text = "Текущая скорость:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // stopButton
             // 
@@ -110,7 +111,7 @@ namespace GraphicalPhysicCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(715, 103);
+            this.ClientSize = new System.Drawing.Size(715, 104);
             this.Controls.Add(this.stopButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.currentSpd);
@@ -118,7 +119,9 @@ namespace GraphicalPhysicCalculator
             this.Controls.Add(this.time);
             this.Controls.Add(this.distance);
             this.Controls.Add(this.Graph);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "SpeedForm";
+            this.ShowIcon = false;
             this.Text = "Скорость";
             this.Load += new System.EventHandler(this.SpeedForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.distance)).EndInit();

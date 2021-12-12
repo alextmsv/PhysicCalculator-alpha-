@@ -21,6 +21,7 @@ namespace GraphicalPhysicCalculator
         }
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
+            this.Height = 150;
             Application.Exit();
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -79,6 +80,33 @@ namespace GraphicalPhysicCalculator
             Menu menu = new Menu();
             this.Hide();
             menu.Show();
+        }
+        int counter = 0;
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            double t = Math.Sqrt((int)numericUpDown1.Value / 5); // если h = g(10)t^2/2, то t = sqrt(h/g(10)/2) или sqrt(h/5) 
+            int magic = (int)t;
+            label4.Text = "Прошел: " + magic.ToString() + " сек";
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            if (counter == 5)
+            {
+                this.Height = 303;
+            }
+            else counter++;
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

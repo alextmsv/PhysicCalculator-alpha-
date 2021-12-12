@@ -54,5 +54,10 @@ namespace GraphicalPhysicCalculator
         {
             tmr_emulation.Enabled = false;
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

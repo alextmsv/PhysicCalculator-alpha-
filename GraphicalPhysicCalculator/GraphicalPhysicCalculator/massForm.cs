@@ -23,10 +23,15 @@ namespace GraphicalPhysicCalculator
         {
             
         }
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
 
         private void massForm_Load(object sender, EventArgs e)
         {
-            
+            stregthNum.Maximum = 10000;
+            aNum.Maximum = 10000;
         }
 
         private void height_ValueChanged(object sender, EventArgs e)
@@ -44,12 +49,10 @@ namespace GraphicalPhysicCalculator
             label3.Text = "m (масса) =";
         }
 
-        int g = 10; //ускорение свободного падения (округленное)
-        double KGtoH = 9.8; // масса в ньютон, умножаем силу (в кг) на 9.8 и получается сила в ньютонах; округленное)
         private void tmr_emulation_Tick(object sender, EventArgs e)
         {
-            double a = 10; // интересно, почему? из формулы силы (ищите в программе) получается что a = v/t. в моем случае, А ИМЕННО В КАЖДОМ, это всегда давало десять. Попробуйте сами :)
-            double mass = (double)stregthNum.Value / a;
+            
+            double mass = (int)stregthNum.Value / (int)aNum.Value;
 
                 label3.Text = label3.Text + " " + mass.ToString() + " кг";
                 tmr_emulation.Enabled = false;

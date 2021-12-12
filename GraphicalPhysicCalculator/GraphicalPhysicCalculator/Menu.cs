@@ -58,7 +58,16 @@ namespace GraphicalPhysicCalculator
 
         private void button4_Click(object sender, EventArgs e)
         {
+            massForm massForm = new massForm();
+            this.Hide();
+            massForm.Show();
+        }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            heightForm heightForm = new heightForm();
+            this.Hide();
+            heightForm.Show();
         }
     }
 }

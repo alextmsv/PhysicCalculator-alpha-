@@ -26,3 +26,4 @@ D:\Exchange Folder\Projects\PhysicCalculator-alpha\PhysicCalculator-alpha\Graphi
 D:\Exchange Folder\Projects\PhysicCalculator-alpha\PhysicCalculator-alpha\GraphicalPhysicCalculator\GraphicalPhysicCalculator\obj\Debug\GraphicalPhysicCalculator.exe
 D:\Exchange Folder\Projects\PhysicCalculator-alpha\PhysicCalculator-alpha\GraphicalPhysicCalculator\GraphicalPhysicCalculator\obj\Debug\GraphicalPhysicCalculator.pdb
 D:\Exchange Folder\Projects\PhysicCalculator-alpha\PhysicCalculator-alpha\GraphicalPhysicCalculator\GraphicalPhysicCalculator\obj\Debug\GraphicalPhysicCalculator.massForm.resources
+D:\Exchange Folder\Projects\PhysicCalculator-alpha\PhysicCalculator-alpha\GraphicalPhysicCalculator\GraphicalPhysicCalculator\obj\Debug\GraphicalPhysicCalculator.heightForm.resources
